@@ -6,6 +6,7 @@ const utils = require("./utils")
 
 // initialize the express app
 app = express()
+const port = process.env.PORT || 3000
 
 
 // path configurations for express and hbs
@@ -90,7 +91,7 @@ app.get("*", (req, res) => {
 
 
 // listen on some port
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("App has been started and listening on port 3000")
 })
 

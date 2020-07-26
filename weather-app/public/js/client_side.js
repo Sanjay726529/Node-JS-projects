@@ -30,7 +30,7 @@ weatherform.addEventListener("submit", (e) => {
 
 
     // fetch the weather for the given location
-    fetch("http://localhost:3000/weather?address=" + location).then((response) => {
+    fetch("/weather?address=" + location).then((response) => {
 
     response.json().then((data) => {
         setTimeout(() => {
