@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel='icon' href="/img/icon.png">  
+    <title>Weather | {{ title }} </title>
+</head>
+
+<body>
+
+    
+    <div class="body-data">
+    {{>header}}
+
+        <form class='location-search'>
+            <input type="text" name="address" placeholder="city name..">
+            <button type="submit"> Search </button>
+        </form>
+        <p class="loading">
+            <img align="middle" width="100px" height="100px" src="/img/loading.gif">
+        </p>
+        <div class='weather-info'>
+            <p id="message1" ></p>
+            <p id="message2" ></p>
+            <p id="message3" ></p>
+            <p id="message4" ></p>
+            <p id="message5" ></p>
+            <p id="message6" ></p>
+            <p id="message7" ></p>
+            <p id="message8" ></p>
+            <p id="message9" ></p>
+        </div>
+
+    </div>
+    {{>footer}}
+    
+    {{!-- load the scripts after all elements are loaded --}}
+    <script src="/js/client_side.js"> </script>
+</body>
+
+</html>

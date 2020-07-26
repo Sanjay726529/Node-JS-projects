@@ -1,0 +1,157 @@
+h1 {
+    color: darkolivegreen;
+    font-size: 54px;
+    color: #fffE41;
+}
+
+
+/* Search text button with animation */
+/* -------------------------------------- */
+
+.location-search {
+
+    margin: auto;
+    padding: 15px 3px;
+
+}
+input[type=text] {
+    width: 200px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: transparent;
+    color:#F7F5F1;
+    font-size: medium;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #F7F5F1;
+    font-size: larger;
+  }
+
+  /* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+    width: 80%;
+    background-color: transparent;
+  }
+
+button {
+    margin: 10px 25px;
+    padding: 10px 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #F7F5F1;
+    background-color: transparent;
+    border: 1px solid #F7F5F1;
+    border-radius: 20px;
+}
+/* -------------------------------------- */
+
+
+/*loading image*/
+/*-------------------------*/
+.loading {
+
+    text-align: center;
+    display: none;
+    
+}   
+
+/*-------------------------*/
+
+/*---------weather-info-------*/
+
+.weather-info {
+    display: none;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+/*-----------------------------*/
+
+
+
+body {
+    background-image: url("../img/bg.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 16px;
+    color: #F7F5F1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
+.bg-image {
+    
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-data {
+
+    flex-grow: 1;
+
+}
+
+
+header a {
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
+    margin: auto;
+    padding: 0 5px;
+    color: #F7F5F1;
+    border-bottom: 1px solid white;
+}
+
+.git-image {
+    width: 16px;
+    height: 16px;
+}
+
+
+footer {
+    border-top: 2px double #F7F5F1;
+    text-align: center;
+    font-size: medium;
+    margin-top: 16px;
+    padding: 0 16px;
+    color: #F7F5F1;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    border-bottom: 2px solid #f7f1f2;
+    padding: 16px 0;
+}
+
+img.not-found {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
